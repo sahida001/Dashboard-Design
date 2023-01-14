@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <title>Dashboard Design</title>
+   <!--CSS Style-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+    <!--Sidebar Design-->
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name">Place A Logo Here</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Attendance</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Employees</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Leaves</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Expence</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Notice</span>
+          </a>
+        </li>
+    
+        <li>
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Departments</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            
+            <i class='bx bx-cog' ></i>
+            <img  class="downImage" src="/image/down-arrow.png" style="height: 100px" width="100px">
+            <span class="links_name">Settings</span>
+
+            <div class="dropdown-content">
+              <a href="#">.&nbsp;&nbsp;Approval</a>
+              <a href="#">.&nbsp;&nbsp;Leave</a>
+              <a href="#">.&nbsp;&nbsp;Office Setting</a>
+              <a href="#">.&nbsp;&nbsp;My Subscriptions</a>
+            </div>
+
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+
+  <!--Sidebar design end here-->
+
+  <!--Home section Design-->
+
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Search">
+        <i class='bx bx-search' ></i>
+      </div>
+
+      <div class="profile-details">
+        <img src="/image/message.png" alt="text">
+        <img src="/image/bell.png" alt="notification">
+        <img src="/image/girl.png" alt="Profile Image">
+        
+      </div>
+    
+    </nav>
+
+     <div class="dash_board">
+      <h1>Dashboard</h1>
+      <p>Company Status</p>
+     </div>
+     
+    
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            
+            <div class="box-topic"></div>
+            <p class="total-employe">Total Employe</p>
+            <div class="number">450</div>
+            <div class="indicator">
+              <div></div>
+             
+              &nbsp;
+              
+            </div>
+          </div>
+          <button class="view-all">view All</button>
+        </div>
+        
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic"></div>
+            <p class="total-employe">Attend Today</p>
+            <div class="number">420</div>
+            <div class="indicator">
+              
+            
+              &nbsp;
+            </div>
+          </div>
+          <button class="view-all">view All</button>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic"></div>
+            <p class="total-employe">Employees On Leave</p>
+            <div class="number">15</div>
+            <div class="indicator">
+              
+             
+              &nbsp;
+            </div>
+          </div>
+          <button class="view-all">view All</button>
+          &nbsp;
+        
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic"></div>
+            <p class="total-employe">New Expense Request</p>
+            <div class="number">5</div>
+            <div class="indicator">
+             
+              &nbsp;
+            </div>
+          </div>
+          <button class="view-all">view All</button>
+         
+         
+        </div> 
+       
+      
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".sidebarBtn");
+  sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
